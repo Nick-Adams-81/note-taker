@@ -4,7 +4,7 @@ var path = require("path")
 var fs = require("fs")
 //express app set up
 var app = express()
-var PORT = 300
+var PORT = 3000
 //set up data parsing
 var data = fs.readFileSync("db.json")
 var notes1 = JSON.parse(data)
