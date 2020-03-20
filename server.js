@@ -10,7 +10,7 @@ var data = fs.readFileSync("db.json")
 var notes1 = JSON.parse(data)
 console.log(notes1)
 app.use(express.urlencoded({extend: true}))
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, 'assets')))
 app.use(express.json())
 
 
